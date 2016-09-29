@@ -1,0 +1,44 @@
+<html ng-app="app">
+	<head>
+		<link href="node_modules/bootstrap/dist/css/bootstrap.css" rel="stylesheet"/>
+		<style>
+			.person-wrap {
+				border: 1px solid black;
+				margin: 40px;
+				padding: 5px;
+				background: green;
+				color: #FFFFFF;
+			}
+		</style>
+	</head>
+	<body>
+		<div ng-controller="main">
+
+			<card></card>
+<card></card>
+			<!-- <div ng-controller="card" >
+			<div ng-click="add()" class="btn btn-primary">
+			count: {{count}}
+			</div>
+			</div> -->
+
+			<!-- <div ng-controller="person" >
+			<div class="person-wrap"ng-click="showCount()">
+			result: {{result}}
+			</div>
+			</div> -->
+		</div>
+		<script src="node_modules/jquery/dist/jquery.js"></script>
+		<script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+		<script src="node_modules/angular/angular.js"></script>
+		<script src="app/config.js"></script>
+		<script src="app/controllers/main.js"></script>
+		<script src="app/controllers/card.js"></script>
+		<script src="app/controllers/person.js"></script>
+
+		<script src="app/services/counterService.js"></script>
+		
+		<script src="app/directives/card.js"></script>
+	</body>
+
+</html>
